@@ -41,104 +41,76 @@
 
 在使用源代码时，建议python版本升级到3.12。在pycharm终端的本项目文件夹下，使用“pip install -r requirements.txt”安装依赖：
 
-![image-20240721134014412](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20240721134014412.png)
 
- 
+![image-20240720172444067](https://github.com/user-attachments/assets/42d98d95-ffdb-455a-a7fb-45c75f4ba950)
+
 
 在您需要的导入笔记中，需要用大括号{}来标记我们认为重要且需要背下的知识点，这些标记可以在做笔记时同步标注，学习后将笔记内容直接导入软件，方便快捷。大括号的标记方法有两种格式：
 
 ①对该知识点的子内容标记，只需在笔记知识点内容加上“{}”即可。知识点可以是“优点”这种抽象的知识点标识，只需要保证整体笔记有逻辑即可。如下图（思维导图实示例）：
 
-
-
-![image-20240720120116999](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20240720120116999.png)
+![image-20240720120116999](https://github.com/user-attachments/assets/65298cd5-e48b-43fb-80f0-f5d7e1a1134e)
 
  
 
 ②对该知识点的部分内容本身进行标记，利用“{”和“}”将对应的信息点括起来即可，如下图，ai将会将本知识点挖去答案，再转化表述进行出题，这对于学生记忆细致且重要的知识点非常有用。如下图：
 
- ![image-20240720120254321](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20240720120254321.png)
+ ![image-20240720120254321](https://github.com/user-attachments/assets/a7b9a74d-41af-4c7d-a9c4-d5f2c572791b)
 
- 
 
 准备好笔记标注，即可将笔记导出成为待识别格式。利用主流思维导图软件的“导出”功能，导出成为docx或txt形式，最终格式要让思维导图变为文本大纲格式，以mindmaster和mindline举例如下：
 
+<img src="https://github.com/user-attachments/assets/24d2e239-c2a8-4aa7-bcce-02849a5b2234" alt="24d2e239-c2a8-4aa7-bcce-02849a5b2234" style="zoom: 50%;" />
 
-
-<img src="C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20240720121938143.png" alt="image-20240720121938143" style="zoom: 50%;" />
-
-<img src="C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20240720122344321.png" alt="image-20240720122344321" style="zoom: 67%;" />
+<img src="https://github.com/user-attachments/assets/f157998e-332d-4fed-937a-455345e6a8e0" alt="f157998e-332d-4fed-937a-455345e6a8e0" style="zoom: 67%;" />
 
 前往智谱ai开放平台（[智谱AI (zhipuai.cn)](https://www.zhipuai.cn/)），注册/登录后前往”api秘钥“，进入”账户充值“充值一定量金额获得api使用权（新用户有一个月100万token免费使用权，无需充值，可跳过此步）。充值后在”API keys“处复制api秘钥
 
 （如果你有其他大模型的API和调用方法，可以直接在botChange下替换调用代码并使用）
 
-
-
-![image-20240720121128233](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20240720121128233.png)
-
+![image-20240720121128233](https://github.com/user-attachments/assets/79b2035a-7817-47fc-abb6-7ccbb98e5546)
 
 
 进入BotChange.py，将你的api秘钥填入api-key中：
 
-
-
-![image-20240720121629369](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20240720121629369.png)
-
+![image-20240720121629369](https://github.com/user-attachments/assets/5c8327e9-1706-43e3-99f6-7423346995c9)
 
 
 准备工作完成。接下来，在GUI_start页面运行，即可打开软件界面：
 
- 
+![image](https://github.com/user-attachments/assets/e87be3af-4f28-43ca-bcfe-b8de0db70c54)
 
-![img](file:///C:\Users\DELL\AppData\Local\Temp\ksohtml14684\wps12.jpg) ![img](file:///C:\Users\DELL\AppData\Local\Temp\ksohtml14684\wps13.jpg)
-
- 
 
 打开软件后，进入选择文件界面。我们点击打开文件，找到刚才我们导出的**文字大纲格式笔记**：
 
 
-
-![img](file:///C:\Users\DELL\AppData\Local\Temp\ksohtml14684\wps14.jpg) 
-
-
-
-导入笔记后注意，该笔记软件需要联网连接ai大模型，否则会出现警告字样：
+![image](https://github.com/user-attachments/assets/be35585b-ddc8-4f5c-8e5e-71ea2d1c0ab8)
 
  
 
-![img](file:///C:\Users\DELL\AppData\Local\Temp\ksohtml14684\wps17.jpg) 
+连接网络后，点击“确定”。等待ai返回数据后，进入主界面。如下图所示，主界面由文本框（显示ai提问文本）、显示上级内容按钮、显示原笔记内容按钮、答案按钮和换题按钮组成：
 
  
-
-连接网络后，重新点击“确定”。等待ai返回数据后，进入主界面。如下图所示，主界面由文本框（显示ai提问文本）、显示上级内容按钮，答案按钮和换题按钮组成：
-
- 
-
-![img](file:///C:\Users\DELL\AppData\Local\Temp\ksohtml14684\wps18.jpg) 
+![wps18](https://github.com/user-attachments/assets/a4e25877-ec8f-4032-b09b-fd22b26d1546)
 
 
 
 用户可以点击“向上展开”，看到该问题在笔记中所属的更宽知识点范围以帮助唤醒记忆，支持多次点击逐步向上获取父级内容。
 
 
-
-![image-20240718191037623](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20240718191037623.png)
+![image-20240718191037623](https://github.com/user-attachments/assets/e0a3162b-4f12-4392-a281-d7791e571528)
 
 
 
 若想不起该问题答案，点击“答案”按钮，对应答案会出现。答案内容可以继续展开的，会在内容后以“++”标注。点击标签即可继续展开答案的子内容：
 
-<img src="C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20240720122800718.png" alt="image-20240720122800718" style="zoom: 67%;" />
-
+![image-20240720122800718](https://github.com/user-attachments/assets/a28368fe-074a-4737-961b-7dfec1df6807)
 
 
 需要看题目在原文笔记出处，可以点击“显示笔记原出处”按钮，进入原笔记所在的位置，一键回顾原笔记内容：
 
 
-
-<img src="C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20240720123047750.png" alt="image-20240720123047750" style="zoom:67%;" />
-
+![image-20240720123047750](https://github.com/user-attachments/assets/9f4fa9e9-b5a7-44b7-b956-0beb9e92ca10)
 
 
 *作者寄语：*
@@ -146,15 +118,14 @@
 欢迎大家共帮助同完善背背的功能，真正让ai助力成为我们随手可用的“第二大脑”！对软件有建议、有疑问，希望成为贡献者，可加入交流群：
 
 
-
-<img src="C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20240721135040962.png" alt="image-20240721135040962" style="zoom: 33%;" />
-
+![image-20240721135040962](https://github.com/user-attachments/assets/2a85c2bc-5bb1-4c1b-a1f4-5b38cb1c24ff)
 
 
 接下来，本软件将持续不断地更新更多功能，也欢迎您参与成为贡献者。
 
 觉得这款软件不错的，给我们打赏给我们多多支持！你们的支持就是我们探索的动力！
 
-<img src="C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20240721134240483.png" alt="image-20240721134240483" style="zoom: 33%;" />
+![image-20240721134240483](https://github.com/user-attachments/assets/bd326004-43d7-4a71-8af4-baa8306e6749)
+
 
 ![img](file:///C:\Users\DELL\AppData\Local\Temp\SGPicFaceTpBq\16676\01058027.jpg)
